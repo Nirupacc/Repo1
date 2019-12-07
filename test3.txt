@@ -1,4 +1,9 @@
 index.html  teat1  test2.txt  test3.txt
 Hello all, This is GIT integration with Jenkins
 test1
+<<<<<<< HEAD
 test3
+=======
+test2
+test3
+>>>>>>> 20603d0a72b20a5276435e8fc4ce4ed0c9cc9fb8
