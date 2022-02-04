@@ -8,6 +8,11 @@ pipeline {
         DEPLOY_TO = 'production'
     }
    stages {
+	   stage("Checkout ") {
+    steps {
+        checkout(scm)
+    }
+}
       stage('Hello') {
          steps {
             script {
