@@ -29,7 +29,8 @@ pipeline {
 		 }
          stage("World"){
              steps {
-                 def externalMethod = load("s1.groovy")
+		     def rootDir = pwd()
+                 def externalMethod = load "${rootDir}/s1.Groovy"
                  externalMethod.firstTest()
              }
          }
